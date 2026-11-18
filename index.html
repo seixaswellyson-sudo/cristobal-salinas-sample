@@ -51,5 +51,20 @@
 })();
 </script>
 
+
+<script>
+/* fc-contact-button-js */
+(function () {
+  if (document.querySelector('.fc-contact')) return;
+  var a = document.createElement('a');
+  a.className = 'fc-contact fc-contact--wa';
+  a.href = 'https://wa.me/12146056551?text=Hi%20Cristobal%2C%20I%20saw%20your%20site%20and%20I%27d%20like%20to%20ask%20about%20a%20home.';
+  a.setAttribute('aria-label', 'Chat on WhatsApp');
+  a.target = "_blank"; a.rel = "noopener";
+  a.innerHTML = '<span class="fc-label">Chat on WhatsApp</span><span class="fc-icon"><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.04 5.5c-5.8 0-10.5 4.7-10.5 10.5 0 1.85.49 3.65 1.42 5.24L5.5 26.5l5.44-1.42a10.45 10.45 0 0 0 5.1 1.32h.01c5.79 0 10.5-4.71 10.5-10.5S21.83 5.5 16.04 5.5Zm6.16 14.85c-.26.73-1.52 1.4-2.1 1.45-.56.07-1.09.26-3.65-.76-3.1-1.22-5.06-4.39-5.22-4.6-.15-.2-1.24-1.65-1.24-3.15s.79-2.24 1.07-2.55c.28-.3.61-.38.82-.38h.59c.19 0 .44-.07.69.52.25.6.86 2.1.94 2.25.08.15.13.33.03.53-.1.2-.15.33-.3.5-.15.18-.32.4-.46.53-.15.15-.3.31-.13.61.17.3.76 1.26 1.63 2.04 1.12 1 2.06 1.31 2.36 1.46.3.15.47.13.65-.08.17-.2.74-.86.94-1.16.2-.3.4-.25.67-.15.28.1 1.76.83 2.06.98.3.15.5.23.57.35.08.13.08.73-.18 1.46Z"/></svg></span>';
+  function add() { document.body.appendChild(a); }
+  if (document.body) add(); else document.addEventListener('DOMContentLoaded', add);
+})();
+</script>
 </body>
 </html>
